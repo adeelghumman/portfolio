@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Header from './Components/Header'
+import Slider from './Components/Slider'
+import BelowSlider from './Components/BelowSlider'
+import BelowSlider1 from './Components/BelowSlider1'
+import BelowSlider2 from './Components/BelowSlider2'
+import Footor from './Components/Footor'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <Header></Header>
+        <Slider></Slider>
+        <BelowSlider></BelowSlider>
+        <BelowSlider1></BelowSlider1>
+        <img id="bs2" src="images/main2.jpg" alt="image" />
+        <BelowSlider2></BelowSlider2>
+        <Footor></Footor>
+
+      </div>
+    )
+  }
+
 }
 
-export default App;
+export default App
